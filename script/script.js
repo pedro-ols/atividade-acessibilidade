@@ -1,6 +1,6 @@
 "use strict";
 
-const MODO_CEGUEIRA = false;
+const MODO_CEGUEIRA = true;
 
 let pedidoAtual = {
     tamanho: "50",
