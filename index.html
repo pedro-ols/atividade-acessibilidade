@@ -1,546 +1,687 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIFURRAH - EAU de SUVACU</title>
+    <link rel="stylesheet" href="/style/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="/script/script.js" defer></script>
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>SIFURRAH - EAU de SUVACU</title>
-        <link rel="stylesheet" href="/style/style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-        <script src="/script/script.js" defer></script>
-    </head>
-
-    <body>
-
-                    <!-- PROBLEMA: Div usada em vez de tag semântica de seção -->
-            <div class="secao-extra">
-                <!-- PROBLEMA: h2 usado sem hierarquia apropriada -->
-                <h2 id="titulo-informacoes">
-                    <span>ℹ️</span>
-                    Informações Adicionais
-                </h2>
-
-                <!-- PROBLEMA: Details sem contexto semântico apropriado -->
-                <div class="info-expandivel">
-                    <div>
-                        <span>📄</span>
-                        Política de devolução e garantia
-                    </div>
-                    <div class="conteudo-expandivel">
-                        <p>Você tem 30 dias para trocar ou devolver o produto se não estiver satisfeito. O reembolso é
-                            integral e o frete de devolução é por nossa conta.</p>
-                    </div>
-                </div>
-
-                <div class="info-expandivel">
-                    <div>
-                        <span>❓</span>
-                        Perguntas frequentes
-                    </div>
-                    <div class="conteudo-expandivel">
-                        <div class="faq-item">
-                            <h4>O perfume é unissex?</h4>
-                            <p>Sim, o Essencia de Suvacu pode ser usado por homens e mulheres.</p>
-                        </div>
-                        <div class="faq-item">
-                            <h4>Quanto tempo dura a fragrância?</h4>
-                            <p>A fixação é de 8 a 12 horas, dependendo do tipo de pele.</p>
-                        </div>
-                        <div class="faq-item">
-                            <h4>É adequado para uso diário?</h4>
-                            <p>Sim, é versátil para qualquer ocasião, dia ou noite.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="info-expandivel">
-                    <div>
-                        <span>⭐</span>
-                        Mais avaliações dos clientes
-                    </div>
-                    <div class="conteudo-expandivel">
-                        <div class="avaliacoes-lista">
-                            <!-- PROBLEMA: Blockquotes sem estrutura semântica -->
-                            <div class="avaliacao-item">
-                                <p>"Perfume maravilhoso com ótima fixação. Recomendo muito!"</p>
-                                <span>- Maria S., São Paulo</span>
-                            </div>
-                            <div class="avaliacao-item">
-                                <p>"Vale cada centavo. Fragrância única e marcante."</p>
-                                <span>- João P., Rio de Janeiro</span>
-                            </div>
-                            <div class="avaliacao-item">
-                                <p>"Entrega rápida e produto exatamente como descrito."</p>
-                                <span>- Ana L., Belo Horizonte</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        <!-- PROBLEMA: Esta div deveria ser uma tag semântica mais apropriada -->
-        <div id="conteudo-principal">
-            <!-- PROBLEMA: Esta div deveria usar uma tag semântica para cabeçalho -->
-            <div class="cabecalho-produto">
-                <div class="marca-logo">
-                    <!-- PROBLEMA: h1 não deveria estar dentro de um cabeçalho secundário -->
-                    <h5 class="logo-sifurrah">SIFURRAH</h5>
-                    <p class="slogan-marca">Fragrâncias Exclusivas de Luxo</p>
-                </div>
-
-                <div class="container-cabecalho">
-                    <div class="imagem-principal">
-                        <!-- PROBLEMA: Alt text muito genérico e sem contexto -->
-                        <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=400&h=500&fit=crop&crop=center&q=80"
-                            alt="perfume fedido" class="foto-produto">
-                        <!-- PROBLEMA: Div sem papel semântico definido -->
-                        <div class="badges-produto">
-                            <!-- PROBLEMA: Spans sem contexto semântico -->
-                            <span class="badge novo">
-                                <span>🆕</span> LANÇAMENTO
-                            </span>
-                            <span class="badge melhor-vendido">
-                                <span>🏆</span> Nº1 EM VENDAS
-                            </span>
-                            <span class="badge exclusivo">
-                                <span>💎</span> EDIÇÃO LIMITADA
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class="info-cabecalho">
-                        <div class="titulo-produto">
-                            <!-- PROBLEMA: h2 usado antes de h1 na página -->
-                            <h2 class="nome-perfume">Essencia DE SUVACU</h2>
-                            <p class="subtitulo-perfume">O Perfume dos Sonhos</p>
-                        </div>
-
-                        <div class="propaganda-principal">
-                            <p class="frase-impacto">"Uma fragrância que desperta mistério e sedução a cada borrifo"</p>
-                            <p class="descricao-luxo">Criado pelos melhores perfumistas franceses com ingredientes raros
-                                e preciosos. Uma experiência olfativa única que marca sua presença por onde você passa.
-                            </p>
-                        </div>
-
-                        <div class="credenciais-produto">
-                            <!-- PROBLEMA: Avaliação sem contexto semântico -->
-                            <div class="avaliacao-estrelas">
-                                <span class="estrelas">★★★★★</span>
-                                <span class="texto-avaliacao">4,8 de 5 estrelas | 2.847 clientes satisfeitos</span>
-                            </div>
-
-                            <!-- PROBLEMA: Lista de prêmios sem estrutura semântica -->
-                            <div class="premios-reconhecimentos">
-                                <span class="premio">
-                                    <span>🏆</span>
-                                    Melhor Fragrância Feminina 2024
-                                </span>
-                                <span class="premio">
-                                    <span>🌟</span>
-                                    Revista Vogue Beauty Awards
-                                </span>
-                            </div>
-
-                            <div class="disponibilidade">
-                                <!-- PROBLEMA: Informação urgente sem marcação semântica -->
-                                <p class="estoque-urgencia">
-                                    <span>⚡</span>
-                                    Apenas 7 unidades restantes em estoque
-                                </p>
-                                <p class="frete-info">
-                                    <span>🚚</span>
-                                    Frete grátis para todo Brasil acima de R$ 200
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- PROBLEMA: Banner de oferta sem papel semântico -->
-                <div class="oferta-especial">
-                    <div class="banner-oferta">
-                        <span class="texto-oferta">
-                            <span>🔥</span>
-                            OFERTA ESPECIAL: 10% de desconto à vista no PIX
-                        </span>
-                        <span class="tempo-limitado">Por tempo limitado!</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- PROBLEMA: Div usada em vez de tag semântica de seção -->
-            <div class="secao-info">
-                <!-- PROBLEMA: h1 usado fora de ordem hierárquica -->
-                <h1>Informações do Produto</h1>
-
-                <div class="info-produto">
-                    <div class="descricao-principal">
-                        <!-- PROBLEMA: h3 usado sem h2 anterior -->
-                        <h3>Descrição</h3>
-                        <p>O Essencia de Suvacu é uma fragrância envolvente que combina notas florais de jasmim e rosas
-                            com toques cítricos de bergamota italiana. Perfeito para ocasiões especiais, desperta
-                            confiança e
-                            elegância.</p>
-                    </div>
-
-                    <div class="grid-info">
-                        <div class="card-info">
-                            <h3><span>🌸</span> Notas Olfativas</h3>
-                            <!-- PROBLEMA: Lista sem estrutura semântica apropriada -->
-                            <div>
-                                <div><strong>Notas de Topo:</strong> Bergamota, Limão Siciliano, Pêra
-                                </div>
-                                <div><strong>Notas de Coração:</strong> Jasmim, Rosa Damascena, Peônia
-                                </div>
-                                <div><strong>Notas de Fundo:</strong> Sândalo, Âmbar, Almíscar Branco
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card-info">
-                            <h3><span>📋</span> Especificações Técnicas</h3>
-                            <!-- PROBLEMA: Lista sem estrutura semântica apropriada -->
-                            <div>
-                                <div>Concentração: Eau de Parfum 20%</div>
-                                <div>Fixação: 8 a 12 horas</div>
-                                <div><span>🏆</span> Melhor Fragrância Feminina 2024
-                                </div>
-                                <div><span>📦</span> Embalagem premium</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="avaliacoes-destaque">
-                        <h3><span>⭐</span> O que dizem nossos clientes</h3>
-                        <!-- PROBLEMA: Depoimento sem estrutura semântica de artigo -->
-                        <div class="depoimento-cliente">
-                            <!-- PROBLEMA: Alt text genérico -->
-                            <img src="/img/nonno.tiff" alt="bixim malacabado" class="foto-cliente" loading="lazy"
-                                onerror="this.style.display='none'">
-                            <!-- PROBLEMA: Citação sem tag semântica apropriada -->
-                            <div>
-                                <p>"Antes eu passava qualquer paninho molhado, agora me transformei com Sifurrah"</p>
-                                <span>- Marc Nonno, Turim - Itália</span>
-                            </div>
-                        </div>
-
-                        <!-- PROBLEMA: Depoimento sem estrutura semântica de artigo -->
-                        <div class="depoimento-cliente">
-                            <!-- PROBLEMA: Citação sem tag semântica apropriada -->
-                            <div>
-                                <p>"Perfume maravilhoso que elimina qualquer cheiro de "curry" do meu corpo. Minha
-                                    namorada vai ao delírio"
-                                </p>
-                                <span>- Baran Gaum, Istambul - Turquia</span>
-                            </div>
-                            <!-- PROBLEMA: Alt text genérico -->
-                            <img src="/img/baran.tiff" alt="bixim feiu" class="foto-cliente" loading="lazy"
-                                onerror="this.style.display='none'">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- PROBLEMA: ORDEM DOS PASSOS COMPLETAMENTE ERRADA! -->
-            <!-- Deveria ser: Passo 1 → 2 → 3 → 4, mas está 4 → 3 → 1 → 2 -->
-
-            <!-- PROBLEMA: Div usada em vez de tag semântica de seção -->
-            <div id="secao-compra" class="secao-compra">
-                <!-- PROBLEMA: h6 usado em hierarquia incorreta -->
-                <h6 id="titulo-compra">
-                    <span>🛒</span>
-                    Fazer Pedido
-                </h6>
-
-                <!-- PROBLEMA: Formulário sem atributos de acessibilidade -->
-                <form novalidate>
-                    <!-- PROBLEMA: Barra de progresso sem atributos ARIA -->
-                    <div class="progresso-form">
-                        <div class="barra-progresso">
-                            <div class="progresso-atual" style="width: 25%"></div>
-                        </div>
-                        <span class="texto-progresso">Passo <span id="passo-atual">1</span> de 4</span>
-                    </div>
-
-                                        <!-- PROBLEMA: Resumo do pedido sem contexto semântico e sem atualizações em tempo real -->
-                    <div class="resumo-pedido">
-                        <h3 id="titulo-resumo">
-                            <span>📄</span>
-                            Resumo do Seu Pedido
-                        </h3>
-                        <div class="resumo-visual">
-                            <!-- PROBLEMA: Alt text genérico -->
-                            <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=150&h=200&fit=crop&crop=center&q=90"
-                                alt="bagaceira" class="produto-resumo" id="imagem-resumo">
-                            <!-- PROBLEMA: Lista de definições sem estrutura semântica -->
-                            <div class="detalhes-pedido">
-                                <div>Produto:</div>
-                                <div id="produto-selecionado">Perfume Essencia de Suvacu 50ml</div>
-
-                                <div>Quantidade:</div>
-                                <div id="quantidade-selecionada">1 unidade</div>
-
-                                <div>Subtotal:</div>
-                                <div id="subtotal">R$ 299,90</div>
-
-                                <div>
-                                    <span>💰</span>
-                                    Desconto à vista (PIX):
-                                </div>
-                                <div id="desconto" class="destaque-desconto">R$ 29,99 (10%)</div>
-
-                                <div><strong>Total à vista:</strong></div>
-                                <div id="total-avista" class="total-destaque"><strong>R$ 269,91</strong></div>
-
-                                <div>
-                                    <span>💳</span>
-                                    Ou parcelado:
-                                </div>
-                                <div id="parcelamento">6x de R$ 49,98 sem juros</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- PASSO 4 PRIMEIRO (ERRADO!) -->
-                    <!-- PROBLEMA: Fieldset sem legend apropriada -->
-                    <div class="passo-compra passo-4">
-                        <h4><strong>Passo 4: Confirmar pedido</strong></h4>
-
-                        <div class="info-pagamento">
-                            <!-- PROBLEMA: h4 usado fora de hierarquia -->
-                            <h4 id="titulo-pagamento">
-                                <span>💳</span>
-                                Formas de pagamento aceitas
-                            </h4>
-                            <!-- PROBLEMA: Grupo de radio buttons sem estrutura semântica -->
-                            <div class="metodos-pagamento">
-                                <!-- PROBLEMA: Input sem label associado -->
-                                <input type="radio" id="pagamento-cartao" name="pagamento" value="cartao">
-                                <div class="metodo-pagamento" id="desc-cartao">
-                                    <span>💳</span>
-                                    Cartão de crédito
-                                </div>
-
-                                <!-- PROBLEMA: Input sem label associado -->
-                                <input type="radio" id="pagamento-pix" name="pagamento" value="pix" checked>
-                                <div class="metodo-pagamento destaque" id="desc-pix">
-                                    <span>🔄</span>
-                                    PIX (10% desconto)
-                                </div>
-
-                                <!-- PROBLEMA: Input sem label associado -->
-                                <input type="radio" id="pagamento-boleto" name="pagamento" value="boleto">
-                                <div class="metodo-pagamento" id="desc-boleto">
-                                    <span>📄</span>
-                                    Boleto bancário
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- PROBLEMA: Botão sem contexto semântico -->
-                        <button type="button" id="finalizar-pedido" class="botao-principal" onclick="finalizarPedido()">
-                            <span>🛒</span>
-                            FINALIZAR PEDIDO - <span id="valor-final">R$ 269,91</span>
-                        </button>
-
-                        <!-- PROBLEMA: Lista de garantias sem estrutura semântica -->
-                        <div class="garantias" id="garantias-lista">
-                            <div class="garantia-item">
-                                <span>✓</span>
-                                Garantia de 30 dias
-                            </div>
-                            <div class="garantia-item">
-                                <span>🚚</span>
-                                Frete grátis acima de R$ 200
-                            </div>
-                            <div class="garantia-item">
-                                <span>⚡</span>
-                                Entrega em 3-5 dias úteis
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- PASSO 3 EM SEGUNDO (ERRADO!) -->
-                    <!-- PROBLEMA: Fieldset sem legend apropriada -->
-                    <div class="passo-compra passo-3">
-                        <h4><strong>Passo 3: Seus dados para entrega</strong></h4>
-
-                        <div class="form-grid">
-                            <div class="grupo-campo campo-completo">
-                                <!-- PROBLEMA: Input sem label associado -->
-                                <span>
-                                    <span>👤</span>
-                                    Nome completo *
-                                </span>
-                                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo"
-                                    autocomplete="name">
-                                <div id="erro-nome" class="mensagem-erro"></div>
-                            </div>
-
-                            <div class="grupo-campo">
-                                <!-- PROBLEMA: Input sem label associado -->
-                                <span>
-                                    <span>📍</span>
-                                    CEP *
-                                </span>
-                                <input type="text" id="cep" name="cep" placeholder="00000-000" required
-                                    autocomplete="postal-code" maxlength="9">
-                                <p id="ajuda-cep" class="ajuda">Precisamos do CEP para calcular o frete</p>
-                                <div id="erro-cep" class="mensagem-erro"></div>
-                            </div>
-
-                            <div class="grupo-campo">
-                                <!-- PROBLEMA: Input sem label associado -->
-                                <span>
-                                    <span>🏠</span>
-                                    Endereço completo
-                                </span>
-                                <input type="text" id="endereco" name="endereco"
-                                    placeholder="Rua, número, bairro, cidade" autocomplete="street-address">
-                            </div>
-
-                            <div class="grupo-campo">
-                                <!-- PROBLEMA: Input sem label associado -->
-                                <span>
-                                    <span>📱</span>
-                                    Telefone para contato
-                                </span>
-                                <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999"
-                                    autocomplete="tel" maxlength="15">
-                                <p id="ajuda-telefone" class="ajuda">Para contato sobre a entrega</p>
-                            </div>
-
-                            <div class="grupo-campo">
-                                <!-- PROBLEMA: Input sem label associado -->
-                                <span>
-                                    <span>📧</span>
-                                    E-mail
-                                </span>
-                                <input type="email" id="email" name="email" placeholder="seu@email.com"
-                                    autocomplete="email">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- PASSO 1 EM TERCEIRO (ERRADO!) -->
-                    <!-- PROBLEMA: Fieldset sem legend apropriada -->
-                    <div class="passo-compra passo-1">
-                        <h4><strong>Passo 1: Escolha o tamanho do perfume</strong></h4>
-
-                        <p class="instrucao">Selecione uma das opções abaixo:</p>
-
-                        <!-- PROBLEMA: Grupo de radio buttons sem estrutura semântica e sem labels -->
-                        <div class="opcoes-tamanho">
-                            <input type="radio" id="tamanho-50ml" name="tamanho" value="50" data-preco="299.90" checked>
-                            <div class="opcao-tamanho">
-                                <div class="tamanho-visual">
-                                    <!-- PROBLEMA: Alt text genérico -->
-                                    <img src="https://images.unsplash.com/photo-1615634260167-c8cdede054de?w=80&h=100&fit=crop&crop=center&q=90"
-                                        alt="produto meia-boca" class="mini-frasco">
-                                </div>
-                                <div class="tamanho-info">
-                                    <strong>50 mililitros - R$ 299,90</strong>
-                                    <span class="descricao-opcao" id="desc-50ml">Tamanho ideal para experimentar</span>
-                                </div>
-                            </div>
-
-                            <input type="radio" id="tamanho-75ml" name="tamanho" value="75" data-preco="399.90">
-                            <div class="opcao-tamanho popular">
-                                <div class="tamanho-visual">
-                                    <!-- PROBLEMA: Alt text genérico -->
-                                    <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=80&h=100&fit=crop&crop=center&q=90"
-                                        alt="frasco lixo" class="mini-frasco">
-                                </div>
-                                <div class="tamanho-info">
-                                    <strong>75 mililitros - R$ 399,90</strong>
-                                    <span class="descricao-opcao" id="desc-75ml">
-                                        <span>🔥</span>
-                                        MAIS POPULAR - Melhor custo benefício
-                                    </span>
-                                </div>
-                            </div>
-
-                            <input type="radio" id="tamanho-100ml" name="tamanho" value="100" data-preco="499.90">
-                            <div class="opcao-tamanho melhor-valor">
-                                <div class="tamanho-visual">
-                                    <!-- PROBLEMA: Alt text genérico -->
-                                    <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=80&h=100&fit=crop&crop=center&q=90"
-                                        alt="imagem do produto bem ruimzim" class="mini-frasco">
-                                </div>
-                                <div class="tamanho-info">
-                                    <strong>100 mililitros - R$ 499,90</strong>
-                                    <span class="descricao-opcao" id="desc-100ml">
-                                        <span>💰</span>
-                                        MELHOR VALOR - Maior economia
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- PASSO 2 POR ÚLTIMO (ERRADO!) -->
-                    <!-- PROBLEMA: Fieldset sem legend apropriada -->
-                    <div class="passo-compra passo-2">
-                        <h4><strong>Passo 2: Quantidade de produtos</strong></h4>
-
-                        <div class="quantidade-container">
-                            <!-- PROBLEMA: Select sem label associado -->
-                            <span class="label-quantidade">Quantos perfumes você deseja?</span>
-                            <select id="quantidade" name="quantidade" class="select-quantidade">
-                                <option value="1">1 perfume</option>
-                                <option value="2">2 perfumes</option>
-                                <option value="3">3 perfumes</option>
-                                <option value="4">4 perfumes</option>
-                                <option value="5">5 perfumes</option>
-                            </select>
-                            <p id="info-quantidade" class="ajuda">
-                                <span>📦</span>
-                                Máximo 5 unidades por pedido
-                            </p>
-                        </div>
-                    </div>
-                </form>
-            </div>
-
-            <!-- PROBLEMA: Seção de sucesso sem contexto semântico -->
-            <div id="mensagem-sucesso" class="oculto secao-sucesso">
-                <div class="icone-sucesso">✅</div>
-                <!-- PROBLEMA: h2 usado sem hierarquia apropriada -->
-                <h2 id="titulo-sucesso">Pedido Realizado com Sucesso!</h2>
-
-                <div class="detalhes-sucesso">
-                    <p><strong><span>🎉</span> Parabéns!</strong> Seu pedido do Perfume Essencia de
-                        Suvacu foi confirmado.</p>
-
-                    <div class="card-pedido">
-                        <!-- PROBLEMA: Lista de definições sem estrutura semântica -->
-                        <div>
-                            <div><span>📋</span> Número do pedido:</div>
-                            <div id="numero-pedido">SIFU12345</div>
-
-                            <div><span>💰</span> Total pago:</div>
-                            <div id="total-pago">R$ 269,91</div>
-
-                            <div><span>🚚</span> Prazo de entrega:</div>
-                            <div>3 a 5 dias úteis</div>
-                        </div>
-                    </div>
-
-                    <p><span>📧</span> Você receberá um e-mail com os detalhes do pedido e o código
-                        de rastreamento.</p>
-
-                    <button type="button" onclick="novaCompra()" class="botao-secundario">
-                        <span>🔄</span> Fazer Nova Compra
-                    </button>
-                </div>
-            </div>
+  <body>
+    <div id="conteudo-principal">
+      <!-- PROBLEMA: Esta div deveria usar uma tag semântica para cabeçalho -->
+      <div class="cabecalho-produto">
+        <div class="marca-logo">
+          <!-- PROBLEMA: h1 não deveria estar dentro de um cabeçalho secundário -->
+          <h5 class="logo-sifurrah">SIFURRAH</h5>
+          <p class="slogan-marca">Fragrâncias Exclusivas de Luxo</p>
         </div>
 
-        <!-- PROBLEMA: Footer sem tag semântica apropriada -->
-        <div class="rodape">
-            <p>&copy; 2024 SIFURRAH. Todos os direitos reservados.</p>
-            <p class="info-acessibilidade">Página otimizada para leitores de tela e navegação por teclado</p>
-        </div>
-    </body>
+        <div class="container-cabecalho">
+          <div class="imagem-principal">
+            <!-- PROBLEMA: Alt text muito genérico e sem contexto -->
+            <img
+              src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=400&h=500&fit=crop&crop=center&q=80"
+              alt="perfume fedido"
+              class="foto-produto"
+            />
+            <!-- PROBLEMA: Div sem papel semântico definido -->
+            <div class="badges-produto">
+              <!-- PROBLEMA: Spans sem contexto semântico -->
+              <span class="badge novo"> <span>🆕</span> LANÇAMENTO </span>
+              <span class="badge melhor-vendido">
+                <span>🏆</span> Nº1 EM VENDAS
+              </span>
+              <span class="badge exclusivo">
+                <span>💎</span> EDIÇÃO LIMITADA
+              </span>
+            </div>
+          </div>
 
+          <div class="info-cabecalho">
+            <div class="titulo-produto">
+              <!-- PROBLEMA: h2 usado antes de h1 na página -->
+              <h2 class="nome-perfume">Essencia DE SUVACU</h2>
+              <p class="subtitulo-perfume">O Perfume dos Sonhos</p>
+            </div>
+
+            <div class="propaganda-principal">
+              <p class="frase-impacto">
+                "Uma fragrância que desperta mistério e sedução a cada borrifo"
+              </p>
+              <p class="descricao-luxo">
+                Criado pelos melhores perfumistas franceses com ingredientes
+                raros e preciosos. Uma experiência olfativa única que marca sua
+                presença por onde você passa.
+              </p>
+            </div>
+
+            <div class="credenciais-produto">
+              <!-- PROBLEMA: Avaliação sem contexto semântico -->
+              <div class="avaliacao-estrelas">
+                <span class="estrelas">★★★★★</span>
+                <span class="texto-avaliacao"
+                  >4,8 de 5 estrelas | 2.847 clientes satisfeitos</span
+                >
+              </div>
+
+              <!-- PROBLEMA: Lista de prêmios sem estrutura semântica -->
+              <div class="premios-reconhecimentos">
+                <span class="premio">
+                  <span>🏆</span>
+                  Melhor Fragrância Feminina 2024
+                </span>
+                <span class="premio">
+                  <span>🌟</span>
+                  Revista Vogue Beauty Awards
+                </span>
+              </div>
+
+              <div class="disponibilidade">
+                <!-- PROBLEMA: Informação urgente sem marcação semântica -->
+                <p class="estoque-urgencia">
+                  <span>⚡</span>
+                  Apenas 7 unidades restantes em estoque
+                </p>
+                <p class="frete-info">
+                  <span>🚚</span>
+                  Frete grátis para todo Brasil acima de R$ 200
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROBLEMA: Banner de oferta sem papel semântico -->
+        <div class="oferta-especial">
+          <div class="banner-oferta">
+            <span class="texto-oferta">
+              <span>🔥</span>
+              OFERTA ESPECIAL: 10% de desconto à vista no PIX
+            </span>
+            <span class="tempo-limitado">Por tempo limitado!</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROBLEMA: Div usada em vez de tag semântica de seção -->
+      <div class="secao-info">
+        <!-- PROBLEMA: h1 usado fora de ordem hierárquica -->
+        <h1>Informações do Produto</h1>
+
+        <div class="info-produto">
+          <div class="descricao-principal">
+            <!-- PROBLEMA: h3 usado sem h2 anterior -->
+            <h3>Descrição</h3>
+            <p>
+              O Essencia de Suvacu é uma fragrância envolvente que combina notas
+              florais de jasmim e rosas com toques cítricos de bergamota
+              italiana. Perfeito para ocasiões especiais, desperta confiança e
+              elegância.
+            </p>
+          </div>
+
+          <div class="grid-info">
+            <div class="card-info">
+              <h3><span>🌸</span> Notas Olfativas</h3>
+              <!-- PROBLEMA: Lista sem estrutura semântica apropriada -->
+              <div>
+                <div>
+                  <strong>Notas de Topo:</strong> Bergamota, Limão Siciliano,
+                  Pêra
+                </div>
+                <div>
+                  <strong>Notas de Coração:</strong> Jasmim, Rosa Damascena,
+                  Peônia
+                </div>
+                <div>
+                  <strong>Notas de Fundo:</strong> Sândalo, Âmbar, Almíscar
+                  Branco
+                </div>
+              </div>
+            </div>
+
+            <div class="card-info">
+              <h3><span>📋</span> Especificações Técnicas</h3>
+              <!-- PROBLEMA: Lista sem estrutura semântica apropriada -->
+              <div>
+                <div>Concentração: Eau de Parfum 20%</div>
+                <div>Fixação: 8 a 12 horas</div>
+                <div><span>🏆</span> Melhor Fragrância Feminina 2024</div>
+                <div><span>📦</span> Embalagem premium</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="avaliacoes-destaque">
+            <h3><span>⭐</span> O que dizem nossos clientes</h3>
+            <!-- PROBLEMA: Depoimento sem estrutura semântica de artigo -->
+            <div class="depoimento-cliente">
+              <!-- PROBLEMA: Alt text genérico -->
+              <img
+                src="/img/nonno.tiff"
+                alt="bixim malacabado"
+                class="foto-cliente"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              />
+              <!-- PROBLEMA: Citação sem tag semântica apropriada -->
+              <div>
+                <p>
+                  "Antes eu passava qualquer paninho molhado, agora me
+                  transformei com Sifurrah"
+                </p>
+                <span>- Marc Nonno, Turim - Itália</span>
+              </div>
+            </div>
+
+            <!-- PROBLEMA: Depoimento sem estrutura semântica de artigo -->
+            <div class="depoimento-cliente">
+              <!-- PROBLEMA: Citação sem tag semântica apropriada -->
+              <div>
+                <p>
+                  "Perfume maravilhoso que elimina qualquer cheiro de "curry" do
+                  meu corpo. Minha namorada vai ao delírio"
+                </p>
+                <span>- Baran Gaum, Istambul - Turquia</span>
+              </div>
+              <!-- PROBLEMA: Alt text genérico -->
+              <img
+                src="/img/baran.tiff"
+                alt="bixim feiu"
+                class="foto-cliente"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROBLEMA: ORDEM DOS PASSOS COMPLETAMENTE ERRADA! -->
+      <!-- Deveria ser: Passo 1 → 2 → 3 → 4, mas está 4 → 3 → 1 → 2 -->
+
+      <!-- PROBLEMA: Div usada em vez de tag semântica de seção -->
+      <div id="secao-compra" class="secao-compra">
+        <!-- PROBLEMA: h6 usado em hierarquia incorreta -->
+        <h6 id="titulo-compra">
+          <span>🛒</span>
+          Fazer Pedido
+        </h6>
+
+        <!-- PROBLEMA: Formulário sem atributos de acessibilidade -->
+        <form novalidate>
+          <!-- PROBLEMA: Barra de progresso sem atributos ARIA -->
+          <div class="progresso-form">
+            <div class="barra-progresso">
+              <div class="progresso-atual" style="width: 25%"></div>
+            </div>
+            <span class="texto-progresso"
+              >Passo <span id="passo-atual">1</span> de 4</span
+            >
+          </div>
+
+          <!-- PROBLEMA: Resumo do pedido sem contexto semântico e sem atualizações em tempo real -->
+          <div class="resumo-pedido">
+            <h3 id="titulo-resumo">
+              <span>📄</span>
+              Resumo do Seu Pedido
+            </h3>
+            <div class="resumo-visual">
+              <!-- PROBLEMA: Alt text genérico -->
+              <img
+                src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=150&h=200&fit=crop&crop=center&q=90"
+                alt="bagaceira"
+                class="produto-resumo"
+                id="imagem-resumo"
+              />
+              <!-- PROBLEMA: Lista de definições sem estrutura semântica -->
+              <div class="detalhes-pedido">
+                <div>Produto:</div>
+                <div id="produto-selecionado">
+                  Perfume Essencia de Suvacu 50ml
+                </div>
+
+                <div>Quantidade:</div>
+                <div id="quantidade-selecionada">1 unidade</div>
+
+                <div>Subtotal:</div>
+                <div id="subtotal">R$ 299,90</div>
+
+                <div>
+                  <span>💰</span>
+                  Desconto à vista (PIX):
+                </div>
+                <div id="desconto" class="destaque-desconto">
+                  R$ 29,99 (10%)
+                </div>
+
+                <div><strong>Total à vista:</strong></div>
+                <div id="total-avista" class="total-destaque">
+                  <strong>R$ 269,91</strong>
+                </div>
+
+                <div>
+                  <span>💳</span>
+                  Ou parcelado:
+                </div>
+                <div id="parcelamento">6x de R$ 49,98 sem juros</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PASSO 4 PRIMEIRO (ERRADO!) -->
+          <!-- PROBLEMA: Fieldset sem legend apropriada -->
+          <div class="passo-compra passo-4">
+            <h4><strong>Passo 4: Confirmar pedido</strong></h4>
+
+            <div class="info-pagamento">
+              <!-- PROBLEMA: h4 usado fora de hierarquia -->
+              <h4 id="titulo-pagamento">
+                <span>💳</span>
+                Formas de pagamento aceitas
+              </h4>
+              <!-- PROBLEMA: Grupo de radio buttons sem estrutura semântica -->
+              <div class="metodos-pagamento">
+                <!-- PROBLEMA: Input sem label associado -->
+                <input
+                  type="radio"
+                  id="pagamento-cartao"
+                  name="pagamento"
+                  value="cartao"
+                />
+                <div class="metodo-pagamento" id="desc-cartao">
+                  <span>💳</span>
+                  Cartão de crédito
+                </div>
+
+                <!-- PROBLEMA: Input sem label associado -->
+                <input
+                  type="radio"
+                  id="pagamento-pix"
+                  name="pagamento"
+                  value="pix"
+                  checked
+                />
+                <div class="metodo-pagamento destaque" id="desc-pix">
+                  <span>🔄</span>
+                  PIX (10% desconto)
+                </div>
+
+                <!-- PROBLEMA: Input sem label associado -->
+                <input
+                  type="radio"
+                  id="pagamento-boleto"
+                  name="pagamento"
+                  value="boleto"
+                />
+                <div class="metodo-pagamento" id="desc-boleto">
+                  <span>📄</span>
+                  Boleto bancário
+                </div>
+              </div>
+            </div>
+
+            <!-- PROBLEMA: Botão sem contexto semântico -->
+            <button
+              type="button"
+              id="finalizar-pedido"
+              class="botao-principal"
+              onclick="finalizarPedido()"
+            >
+              <span>🛒</span>
+              FINALIZAR PEDIDO - <span id="valor-final">R$ 269,91</span>
+            </button>
+
+            <!-- PROBLEMA: Lista de garantias sem estrutura semântica -->
+            <div class="garantias" id="garantias-lista">
+              <div class="garantia-item">
+                <span>✓</span>
+                Garantia de 30 dias
+              </div>
+              <div class="garantia-item">
+                <span>🚚</span>
+                Frete grátis acima de R$ 200
+              </div>
+              <div class="garantia-item">
+                <span>⚡</span>
+                Entrega em 3-5 dias úteis
+              </div>
+            </div>
+          </div>
+
+          <!-- PASSO 3 EM SEGUNDO (ERRADO!) -->
+          <!-- PROBLEMA: Fieldset sem legend apropriada -->
+          <div class="passo-compra passo-3">
+            <h4><strong>Passo 3: Seus dados para entrega</strong></h4>
+
+            <div class="form-grid">
+              <div class="grupo-campo campo-completo">
+                <!-- PROBLEMA: Input sem label associado -->
+                <span>
+                  <span>👤</span>
+                  Nome completo *
+                </span>
+                <input
+                  type="text"
+                  id="nome"
+                  name="nome"
+                  required
+                  placeholder="Digite seu nome completo"
+                  autocomplete="name"
+                />
+                <div id="erro-nome" class="mensagem-erro"></div>
+              </div>
+
+              <div class="grupo-campo">
+                <!-- PROBLEMA: Input sem label associado -->
+                <span>
+                  <span>📍</span>
+                  CEP *
+                </span>
+                <input
+                  type="text"
+                  id="cep"
+                  name="cep"
+                  placeholder="00000-000"
+                  required
+                  autocomplete="postal-code"
+                  maxlength="9"
+                />
+                <p id="ajuda-cep" class="ajuda">
+                  Precisamos do CEP para calcular o frete
+                </p>
+                <div id="erro-cep" class="mensagem-erro"></div>
+              </div>
+
+              <div class="grupo-campo">
+                <!-- PROBLEMA: Input sem label associado -->
+                <span>
+                  <span>🏠</span>
+                  Endereço completo
+                </span>
+                <input
+                  type="text"
+                  id="endereco"
+                  name="endereco"
+                  placeholder="Rua, número, bairro, cidade"
+                  autocomplete="street-address"
+                />
+              </div>
+
+              <div class="grupo-campo">
+                <!-- PROBLEMA: Input sem label associado -->
+                <span>
+                  <span>📱</span>
+                  Telefone para contato
+                </span>
+                <input
+                  type="tel"
+                  id="telefone"
+                  name="telefone"
+                  placeholder="(11) 99999-9999"
+                  autocomplete="tel"
+                  maxlength="15"
+                />
+                <p id="ajuda-telefone" class="ajuda">
+                  Para contato sobre a entrega
+                </p>
+              </div>
+
+              <div class="grupo-campo">
+                <!-- PROBLEMA: Input sem label associado -->
+                <span>
+                  <span>📧</span>
+                  E-mail
+                </span>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="seu@email.com"
+                  autocomplete="email"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- PASSO 1 EM TERCEIRO (ERRADO!) -->
+          <!-- PROBLEMA: Fieldset sem legend apropriada -->
+          <div class="passo-compra passo-1">
+            <h4><strong>Passo 1: Escolha o tamanho do perfume</strong></h4>
+
+            <p class="instrucao">Selecione uma das opções abaixo:</p>
+
+            <!-- PROBLEMA: Grupo de radio buttons sem estrutura semântica e sem labels -->
+            <div class="opcoes-tamanho">
+              <input
+                type="radio"
+                id="tamanho-50ml"
+                name="tamanho"
+                value="50"
+                data-preco="299.90"
+                checked
+              />
+              <div class="opcao-tamanho">
+                <div class="tamanho-visual">
+                  <!-- PROBLEMA: Alt text genérico -->
+                  <img
+                    src="https://images.unsplash.com/photo-1615634260167-c8cdede054de?w=80&h=100&fit=crop&crop=center&q=90"
+                    alt="produto meia-boca"
+                    class="mini-frasco"
+                  />
+                </div>
+                <div class="tamanho-info">
+                  <strong>50 mililitros - R$ 299,90</strong>
+                  <span class="descricao-opcao" id="desc-50ml"
+                    >Tamanho ideal para experimentar</span
+                  >
+                </div>
+              </div>
+
+              <input
+                type="radio"
+                id="tamanho-75ml"
+                name="tamanho"
+                value="75"
+                data-preco="399.90"
+              />
+              <div class="opcao-tamanho popular">
+                <div class="tamanho-visual">
+                  <!-- PROBLEMA: Alt text genérico -->
+                  <img
+                    src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=80&h=100&fit=crop&crop=center&q=90"
+                    alt="frasco lixo"
+                    class="mini-frasco"
+                  />
+                </div>
+                <div class="tamanho-info">
+                  <strong>75 mililitros - R$ 399,90</strong>
+                  <span class="descricao-opcao" id="desc-75ml">
+                    <span>🔥</span>
+                    MAIS POPULAR - Melhor custo benefício
+                  </span>
+                </div>
+              </div>
+
+              <input
+                type="radio"
+                id="tamanho-100ml"
+                name="tamanho"
+                value="100"
+                data-preco="499.90"
+              />
+              <div class="opcao-tamanho melhor-valor">
+                <div class="tamanho-visual">
+                  <!-- PROBLEMA: Alt text genérico -->
+                  <img
+                    src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=80&h=100&fit=crop&crop=center&q=90"
+                    alt="imagem do produto bem ruimzim"
+                    class="mini-frasco"
+                  />
+                </div>
+                <div class="tamanho-info">
+                  <strong>100 mililitros - R$ 499,90</strong>
+                  <span class="descricao-opcao" id="desc-100ml">
+                    <span>💰</span>
+                    MELHOR VALOR - Maior economia
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PASSO 2 POR ÚLTIMO (ERRADO!) -->
+          <!-- PROBLEMA: Fieldset sem legend apropriada -->
+          <div class="passo-compra passo-2">
+            <h4><strong>Passo 2: Quantidade de produtos</strong></h4>
+
+            <div class="quantidade-container">
+              <!-- PROBLEMA: Select sem label associado -->
+              <span class="label-quantidade"
+                >Quantos perfumes você deseja?</span
+              >
+              <select
+                id="quantidade"
+                name="quantidade"
+                class="select-quantidade"
+              >
+                <option value="1">1 perfume</option>
+                <option value="2">2 perfumes</option>
+                <option value="3">3 perfumes</option>
+                <option value="4">4 perfumes</option>
+                <option value="5">5 perfumes</option>
+              </select>
+              <p id="info-quantidade" class="ajuda">
+                <span>📦</span>
+                Máximo 5 unidades por pedido
+              </p>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- PROBLEMA: Seção de sucesso sem contexto semântico -->
+      <div id="mensagem-sucesso" class="oculto secao-sucesso">
+        <div class="icone-sucesso">✅</div>
+        <!-- PROBLEMA: h2 usado sem hierarquia apropriada -->
+        <h2 id="titulo-sucesso">Pedido Realizado com Sucesso!</h2>
+
+        <div class="detalhes-sucesso">
+          <p>
+            <strong><span>🎉</span> Parabéns!</strong> Seu pedido do Perfume
+            Essencia de Suvacu foi confirmado.
+          </p>
+
+          <div class="card-pedido">
+            <!-- PROBLEMA: Lista de definições sem estrutura semântica -->
+            <div>
+              <div><span>📋</span> Número do pedido:</div>
+              <div id="numero-pedido">SIFU12345</div>
+
+              <div><span>💰</span> Total pago:</div>
+              <div id="total-pago">R$ 269,91</div>
+
+              <div><span>🚚</span> Prazo de entrega:</div>
+              <div>3 a 5 dias úteis</div>
+            </div>
+          </div>
+
+          <p>
+            <span>📧</span> Você receberá um e-mail com os detalhes do pedido e
+            o código de rastreamento.
+          </p>
+
+          <button type="button" onclick="novaCompra()" class="botao-secundario">
+            <span>🔄</span> Fazer Nova Compra
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- PROBLEMA: Div usada em vez de tag semântica de seção -->
+    <div class="secao-extra">
+      <!-- PROBLEMA: h2 usado sem hierarquia apropriada -->
+      <h2 id="titulo-informacoes">
+        <span>ℹ️</span>
+        Informações Adicionais
+      </h2>
+
+      <!-- PROBLEMA: Details sem contexto semântico apropriado -->
+      <div class="info-expandivel">
+        <div>
+          <span>📄</span>
+          Política de devolução e garantia
+        </div>
+        <div class="conteudo-expandivel">
+          <p>
+            Você tem 30 dias para trocar ou devolver o produto se não estiver
+            satisfeito. O reembolso é integral e o frete de devolução é por
+            nossa conta.
+          </p>
+        </div>
+      </div>
+
+      <div class="info-expandivel">
+        <div>
+          <span>❓</span>
+          Perguntas frequentes
+        </div>
+        <div class="conteudo-expandivel">
+          <div class="faq-item">
+            <h4>O perfume é unissex?</h4>
+            <p>
+              Sim, o Essencia de Suvacu pode ser usado por homens e mulheres.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h4>Quanto tempo dura a fragrância?</h4>
+            <p>A fixação é de 8 a 12 horas, dependendo do tipo de pele.</p>
+          </div>
+          <div class="faq-item">
+            <h4>É adequado para uso diário?</h4>
+            <p>Sim, é versátil para qualquer ocasião, dia ou noite.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-expandivel">
+        <div>
+          <span>⭐</span>
+          Mais avaliações dos clientes
+        </div>
+        <div class="conteudo-expandivel">
+          <div class="avaliacoes-lista">
+            <!-- PROBLEMA: Blockquotes sem estrutura semântica -->
+            <div class="avaliacao-item">
+              <p>"Perfume maravilhoso com ótima fixação. Recomendo muito!"</p>
+              <span>- Maria S., São Paulo</span>
+            </div>
+            <div class="avaliacao-item">
+              <p>"Vale cada centavo. Fragrância única e marcante."</p>
+              <span>- João P., Rio de Janeiro</span>
+            </div>
+            <div class="avaliacao-item">
+              <p>"Entrega rápida e produto exatamente como descrito."</p>
+              <span>- Ana L., Belo Horizonte</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROBLEMA: Esta div deveria ser uma tag semântica mais apropriada -->
+
+    <!-- PROBLEMA: Footer sem tag semântica apropriada -->
+    <div class="rodape">
+      <p>&copy; 2024 SIFURRAH. Todos os direitos reservados.</p>
+      <p class="info-acessibilidade">
+        Página otimizada para leitores de tela e navegação por teclado
+      </p>
+    </div>
+  </body>
 </html>
